@@ -38,24 +38,32 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="relative aspect-[4/3] w-full min-h-[260px] rounded-vintage-lg bg-gradient-to-br from-slate-100 to-slate-200 p-6 vintage-inset shadow-vintage-flat ring-1 ring-slate-200">
-              <div className="absolute inset-5 rounded-vintage bg-white/80 shadow-vintage-flat vintage-gloss">
-                <div className="absolute inset-5 rounded-vintage border border-dashed border-slate-300" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-slate-500">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-vintage-raised">
-                    <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M4 13.5V11a2 2 0 0 1 4 0v2.5" />
-                      <path d="M8 11V7a2 2 0 0 1 4 0v4" />
-                      <path d="M12 11V6a2 2 0 1 1 4 0v5" />
-                      <path d="M16 11V8a2 2 0 1 1 4 0v7a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-1" />
-                    </svg>
+            <div className="relative aspect-[4/3] w-full min-h-[260px] rounded-vintage-lg p-6 vintage-inset shadow-vintage-flat ring-1 ring-slate-200 bg-gradient-to-br from-indigo-100 via-sky-100 to-amber-100">
+              <div className="absolute inset-0 rounded-vintage-lg vintage-gloss" />
+              <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-pink-300/70 blur-2xl" />
+              <div className="absolute -right-6 top-4 h-28 w-28 rounded-full bg-cyan-300/60 blur-2xl" />
+              <div className="absolute bottom-4 left-6 h-24 w-24 rounded-full bg-amber-300/60 blur-2xl" />
+              <div className="relative h-full rounded-vintage-lg bg-white/70 p-5 shadow-vintage-raised">
+                <div className="grid h-full grid-cols-2 gap-4">
+                  <div className="flex flex-col justify-between rounded-vintage bg-gradient-to-b from-white to-slate-100 p-4 shadow-vintage-flat">
+                    <div className="text-xs font-semibold text-blue-700 uppercase tracking-[0.3em]">Live</div>
+                    <div className="text-2xl font-bold text-slate-800 font-display">Gesture Hub</div>
+                    <div className="text-sm text-slate-600">3D depth, glossy layers, and playful light.</div>
                   </div>
-                  <div className="text-sm">Landmark Tracking</div>
+                  <div className="relative rounded-vintage bg-gradient-to-br from-blue-200 via-indigo-200 to-purple-200 shadow-vintage-flat">
+                    <div className="absolute left-3 top-3 h-12 w-12 rounded-full bg-white/80 shadow-vintage-raised" />
+                    <div className="absolute right-4 top-8 h-8 w-8 rounded-full bg-white/80 shadow-vintage-raised" />
+                    <div className="absolute left-6 bottom-4 h-10 w-10 rounded-full bg-white/80 shadow-vintage-raised" />
+                    <div className="absolute bottom-3 right-3 h-14 w-14 rounded-full bg-white/80 shadow-vintage-raised" />
+                  </div>
+                  <div className="col-span-2 flex items-center justify-between rounded-vintage bg-white/80 px-4 py-3 shadow-vintage-flat">
+                    <div className="flex items-center gap-3">
+                      <div className="h-3 w-3 rounded-full bg-green-500 shadow-vintage-flat" />
+                      <span className="text-sm text-slate-700">3D Retro UI Mode</span>
+                    </div>
+                    <div className="text-sm font-semibold text-blue-600">Ready</div>
+                  </div>
                 </div>
-                <div className="absolute -left-2 top-8 h-2 w-2 rounded-full bg-blue-500 shadow-vintage-flat" />
-                <div className="absolute right-8 top-10 h-2 w-2 rounded-full bg-blue-500 shadow-vintage-flat" />
-                <div className="absolute left-12 bottom-8 h-2 w-2 rounded-full bg-blue-500 shadow-vintage-flat" />
-                <div className="absolute right-12 bottom-12 h-2 w-2 rounded-full bg-blue-500 shadow-vintage-flat" />
               </div>
             </div>
           </div>
