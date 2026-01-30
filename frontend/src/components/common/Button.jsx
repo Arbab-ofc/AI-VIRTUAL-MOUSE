@@ -2,13 +2,13 @@ import React from "react";
 
 const variantStyles = {
   primary:
-    "bg-gradient-to-b from-blue-500 to-blue-700 border border-blue-700/60 text-white hover:from-blue-500 hover:to-blue-800",
+    "bg-[#8CC2FF] text-[#2D2B2A] hover:bg-[#6FB3FF]",
   secondary:
-    "bg-gradient-to-b from-white to-slate-100 border border-slate-300 text-slate-700 hover:from-white hover:to-slate-200",
+    "bg-[#FFE7C2] text-[#2D2B2A] hover:bg-[#FFD59E]",
   success:
-    "bg-gradient-to-b from-green-400 to-green-600 border border-green-600/70 text-white hover:to-green-700",
+    "bg-[#78E2D0] text-[#2D2B2A] hover:bg-[#5FD6C4]",
   danger:
-    "bg-gradient-to-b from-red-400 to-red-600 border border-red-600/70 text-white hover:to-red-700"
+    "bg-[#FF9BB0] text-[#2D2B2A] hover:bg-[#FF819C]"
 };
 
 export default function Button({
@@ -22,7 +22,7 @@ export default function Button({
   return (
     <button
       type={type}
-      className={`rounded-xl px-6 py-3 font-medium transition-all duration-200 active:scale-[0.98] vintage-btn ${variantStyles[variant]} ${disabled ? "opacity-60 cursor-not-allowed" : ""} ${className}`}
+      className={`rounded-xl px-6 py-3 font-medium transition-all duration-200 active:scale-[0.98] retro-button ${variantStyles[variant]} ${disabled ? "opacity-60 cursor-not-allowed" : ""} ${className}`}
       disabled={disabled}
       onClick={onClick}
     >

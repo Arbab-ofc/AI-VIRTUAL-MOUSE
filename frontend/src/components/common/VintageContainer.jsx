@@ -8,9 +8,9 @@ const paddingMap = {
 };
 
 const variantMap = {
-  raised: "shadow-vintage-raised vintage-float",
-  flat: "shadow-vintage-flat vintage-inset",
-  interactive: "shadow-vintage-raised vintage-float hover:shadow-vintage-hover active:shadow-vintage-pressed"
+  raised: "retro-shadow",
+  flat: "retro-inset",
+  interactive: "retro-shadow"
 };
 
 export default function VintageContainer({
@@ -20,7 +20,7 @@ export default function VintageContainer({
   padding = "md",
   onClick
 }) {
-  const baseClasses = `vintage-surface vintage-gloss transition-all duration-200 ease-out ${paddingMap[padding] || paddingMap.md} ${variantMap[variant] || variantMap.raised}`;
+  const baseClasses = `retro-window transition-all duration-200 ease-out ${paddingMap[padding] || paddingMap.md} ${variantMap[variant] || variantMap.raised}`;
   const interactiveClasses = variant === "interactive" ? "cursor-pointer hover:-translate-y-0.5 active:translate-y-0.5" : "";
 
   return (
