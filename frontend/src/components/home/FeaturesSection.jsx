@@ -47,17 +47,18 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="mx-auto max-w-[1200px] py-20">
-      <div className="text-center">
-        <span className="text-xs font-semibold tracking-[0.3em] text-blue-600">FEATURES</span>
-        <h2 className="mt-3 text-3xl font-bold text-slate-800 font-display">Why Choose Virtual Mouse</h2>
+      <div className="flex flex-col items-center text-center">
+        <span className="vintage-badge px-4 py-2 text-[11px] font-semibold tracking-[0.35em] text-blue-700 uppercase">Features</span>
+        <h2 className="mt-4 text-3xl font-bold text-slate-800 font-display">Why Choose Virtual Mouse</h2>
+        <div className="mt-6 h-[2px] w-32 vintage-divider" />
       </div>
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
           <VintageContainer key={feature.title} variant="interactive" padding="lg" className="fade-up">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600 shadow-vintage-flat">
               {feature.icon}
             </div>
-            <h3 className="mt-4 text-xl font-semibold text-slate-800">{feature.title}</h3>
+            <h3 className="mt-4 text-xl font-semibold text-slate-800 font-display">{feature.title}</h3>
             <p className="mt-2 text-slate-600">{feature.description}</p>
           </VintageContainer>
         ))}
