@@ -21,7 +21,7 @@ export default function GestureStatusPanel({ currentGesture, fingerStates, confi
       </div>
 
       <div className="mt-6 text-center">
-        <div className={`text-3xl font-semibold ${active ? "text-blue-600" : "text-slate-400"}`}>
+        <div className={`text-3xl font-semibold font-display ${active ? "text-blue-600" : "text-slate-400"}`}>
           {displayGesture}
         </div>
         <div className="mt-2 text-sm text-slate-500">Detected Action</div>
@@ -36,8 +36,8 @@ export default function GestureStatusPanel({ currentGesture, fingerStates, confi
               <div
                 className={`flex h-8 w-8 items-center justify-center rounded-full text-xs transition-all duration-200 ${
                   isExtended
-                    ? "bg-blue-500 text-white scale-105"
-                    : "bg-slate-200 text-slate-400"
+                    ? "bg-blue-500 text-white scale-105 shadow-vintage-flat"
+                    : "bg-slate-200 text-slate-400 shadow-vintage-flat"
                 }`}
               >
                 {index + 1}

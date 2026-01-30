@@ -11,7 +11,7 @@ export default function HeroSection() {
           <span className="text-xs font-semibold tracking-[0.3em] text-blue-600">
             GESTURE CONTROL TECHNOLOGY
           </span>
-          <h1 className="text-3xl font-bold leading-tight text-slate-800 md:text-5xl">
+          <h1 className="text-3xl font-bold leading-tight text-slate-800 md:text-5xl font-display">
             Control Your Computer With Hand Gestures
           </h1>
           <p className="max-w-[500px] text-lg text-slate-600">

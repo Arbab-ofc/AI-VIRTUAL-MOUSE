@@ -8,9 +8,9 @@ const paddingMap = {
 };
 
 const variantMap = {
-  raised: "shadow-vintage-raised",
-  flat: "shadow-vintage-flat",
-  interactive: "shadow-vintage-raised hover:shadow-vintage-hover active:shadow-vintage-pressed"
+  raised: "shadow-vintage-raised vintage-float",
+  flat: "shadow-vintage-flat vintage-inset",
+  interactive: "shadow-vintage-raised vintage-float hover:shadow-vintage-hover active:shadow-vintage-pressed"
 };
 
 export default function VintageContainer({

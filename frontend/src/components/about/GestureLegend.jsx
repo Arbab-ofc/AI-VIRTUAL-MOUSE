@@ -33,7 +33,7 @@ export default function GestureLegend() {
     <section className="mx-auto max-w-[1200px] py-12">
       <VintageContainer padding="lg">
         <div>
-          <h3 className="text-2xl font-semibold text-slate-800">Gesture Reference Guide</h3>
+          <h3 className="text-2xl font-semibold text-slate-800 font-display">Gesture Reference Guide</h3>
           <p className="mt-2 text-slate-600">Learn the gestures that control the system.</p>
         </div>
         <div className="mt-8 grid gap-5 md:grid-cols-2">

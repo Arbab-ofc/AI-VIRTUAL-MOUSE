@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between border-b border-slate-200 bg-white/80 px-6 backdrop-blur-md shadow-vintage-flat rounded-b-[20px]">
+      <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between border-b border-slate-200 bg-white/80 px-6 backdrop-blur-md shadow-vintage-flat rounded-b-[20px] vintage-gloss">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-vintage bg-blue-50 text-blue-600 shadow-vintage-raised">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -22,7 +22,7 @@ export default function Header() {
               <path d="M16 11V8a2 2 0 1 1 4 0v7a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-1" />
             </svg>
           </div>
-          <span className="text-lg font-semibold text-slate-800">Virtual Mouse</span>
+          <span className="text-lg font-semibold text-slate-800 font-display">Virtual Mouse</span>
         </div>
 
         <nav className="hidden items-center gap-6 md:flex">

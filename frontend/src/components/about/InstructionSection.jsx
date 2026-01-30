@@ -28,7 +28,7 @@ export default function InstructionSection() {
   return (
     <section className="mx-auto max-w-[900px] py-20">
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-slate-800">How to Use Virtual Mouse</h2>
+        <h2 className="text-3xl font-bold text-slate-800 font-display">How to Use Virtual Mouse</h2>
         <p className="mt-3 text-slate-600">Follow these steps to start controlling your cursor with gestures.</p>
       </div>
       <div className="relative mt-10">

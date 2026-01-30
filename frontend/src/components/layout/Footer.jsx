@@ -24,7 +24,7 @@ export default function Footer() {
                   <path d="M16 11V8a2 2 0 1 1 4 0v7a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-1" />
                 </svg>
               </div>
-              <span className="text-lg font-semibold text-slate-800">Virtual Mouse</span>
+              <span className="text-lg font-semibold text-slate-800 font-display">Virtual Mouse</span>
             </div>
             <p className="mt-3 text-sm text-slate-600">Control your computer naturally.</p>
           </div>

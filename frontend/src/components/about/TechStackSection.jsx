@@ -9,7 +9,7 @@ export default function TechStackSection() {
     <section className="mx-auto max-w-[1200px] py-12">
       <VintageContainer padding="lg" className="grid gap-6 md:grid-cols-2 fade-up">
         <div>
-          <h3 className="text-xl font-semibold text-slate-800">Frontend Technologies</h3>
+          <h3 className="text-xl font-semibold text-slate-800 font-display">Frontend Technologies</h3>
           <ul className="mt-4 space-y-2 text-slate-600">
             {frontendStack.map((item) => (
               <li key={item} className="flex items-center gap-2">
@@ -20,7 +20,7 @@ export default function TechStackSection() {
           </ul>
         </div>
         <div>
-          <h3 className="text-xl font-semibold text-slate-800">Backend Technologies</h3>
+          <h3 className="text-xl font-semibold text-slate-800 font-display">Backend Technologies</h3>
           <ul className="mt-4 space-y-2 text-slate-600">
             {backendStack.map((item) => (
               <li key={item} className="flex items-center gap-2">

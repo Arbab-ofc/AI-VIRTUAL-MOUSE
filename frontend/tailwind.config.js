@@ -33,7 +33,8 @@ export default {
         "vintage-sm": "12px"
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"]
+        sans: ["Sora", "system-ui", "sans-serif"],
+        display: ["Fraunces", "Georgia", "serif"]
       }
     }
   },

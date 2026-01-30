@@ -49,7 +49,7 @@ export default function FeaturesSection() {
     <section className="mx-auto max-w-[1200px] py-20">
       <div className="text-center">
         <span className="text-xs font-semibold tracking-[0.3em] text-blue-600">FEATURES</span>
-        <h2 className="mt-3 text-3xl font-bold text-slate-800">Why Choose Virtual Mouse</h2>
+        <h2 className="mt-3 text-3xl font-bold text-slate-800 font-display">Why Choose Virtual Mouse</h2>
       </div>
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (

@@ -1,10 +1,14 @@
 import React from "react";
 
 const variantStyles = {
-  primary: "bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800",
-  secondary: "bg-white border border-slate-300 text-slate-700 hover:bg-slate-50",
-  success: "bg-green-500 text-white hover:bg-green-600",
-  danger: "bg-red-500 text-white hover:bg-red-600"
+  primary:
+    "bg-gradient-to-b from-blue-500 to-blue-700 border border-blue-700/60 text-white hover:from-blue-500 hover:to-blue-800",
+  secondary:
+    "bg-gradient-to-b from-white to-slate-100 border border-slate-300 text-slate-700 hover:from-white hover:to-slate-200",
+  success:
+    "bg-gradient-to-b from-green-400 to-green-600 border border-green-600/70 text-white hover:to-green-700",
+  danger:
+    "bg-gradient-to-b from-red-400 to-red-600 border border-red-600/70 text-white hover:to-red-700"
 };
 
 export default function Button({

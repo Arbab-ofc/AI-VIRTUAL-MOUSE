@@ -60,7 +60,7 @@ export default function ControlPanel({
         <button
           type="button"
           onClick={isPaused ? onResume : onPause}
-          className="flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition-all hover:bg-slate-50"
+          className="flex items-center gap-2 rounded-xl border border-slate-300 bg-gradient-to-b from-white to-slate-100 px-4 py-3 text-sm font-medium text-slate-700 transition-all hover:to-slate-200 vintage-btn"
         >
           {isPaused ? "Resume" : "Pause"}
         </button>
