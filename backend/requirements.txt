@@ -1,0 +1,8 @@
+fastapi==0.115.8
+uvicorn[standard]==0.27.1
+pydantic==2.6.4
+pydantic-settings==2.2.1
+opencv-python==4.9.0.80
+mediapipe==0.10.32
+pyautogui==0.9.54
+python-multipart==0.0.9
