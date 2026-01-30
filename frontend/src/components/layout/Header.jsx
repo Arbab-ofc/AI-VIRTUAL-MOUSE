@@ -11,7 +11,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="fixed top-0 left-0 right-0 z-50 mt-3">
       <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between retro-window px-6">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#8CC2FF] text-[#2D2B2A] retro-shadow">
