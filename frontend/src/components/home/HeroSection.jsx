@@ -38,7 +38,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="relative aspect-[4/3] w-full rounded-vintage-lg bg-gradient-to-br from-slate-100 to-slate-200 p-6 vintage-inset">
+            <div className="relative aspect-[4/3] w-full min-h-[260px] rounded-vintage-lg bg-gradient-to-br from-slate-100 to-slate-200 p-6 vintage-inset shadow-vintage-flat ring-1 ring-slate-200">
               <div className="absolute inset-5 rounded-vintage bg-white/80 shadow-vintage-flat vintage-gloss">
                 <div className="absolute inset-5 rounded-vintage border border-dashed border-slate-300" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-slate-500">
