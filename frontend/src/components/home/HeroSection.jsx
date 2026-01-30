@@ -6,7 +6,7 @@ import Button from "../common/Button";
 export default function HeroSection() {
   return (
     <section className="mx-auto mt-12 max-w-[1200px]">
-      <VintageContainer padding="lg" className="grid gap-12 lg:grid-cols-[3fr_2fr]">
+      <VintageContainer padding="lg" className="grid gap-12 lg:grid-cols-[3fr_2fr] fade-up">
         <div className="flex flex-col justify-center gap-6">
           <span className="text-xs font-semibold tracking-[0.3em] text-blue-600">
             GESTURE CONTROL TECHNOLOGY
@@ -28,22 +28,24 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <div className="relative aspect-[4/3] w-full rounded-vintage bg-gradient-to-br from-slate-100 to-slate-200 p-6">
-            <div className="absolute inset-6 rounded-vintage border border-dashed border-slate-300">
+          <div className="relative aspect-[4/3] w-full rounded-vintage-lg bg-gradient-to-br from-slate-100 to-slate-200 p-6 vintage-inset">
+            <div className="absolute inset-5 rounded-vintage bg-white/70 shadow-vintage-flat vintage-gloss">
+              <div className="absolute inset-5 rounded-vintage border border-dashed border-slate-300" />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-slate-500">
-                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-vintage-flat">
+                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-vintage-raised">
                   <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                    <path d="M5 8h14" />
-                    <path d="M5 12h14" />
-                    <path d="M5 16h14" />
+                    <path d="M4 13.5V11a2 2 0 0 1 4 0v2.5" />
+                    <path d="M8 11V7a2 2 0 0 1 4 0v4" />
+                    <path d="M12 11V6a2 2 0 1 1 4 0v5" />
+                    <path d="M16 11V8a2 2 0 1 1 4 0v7a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-1" />
                   </svg>
                 </div>
-                <div className="text-sm">Abstract Hand Landmarks</div>
+                <div className="text-sm">Landmark Tracking</div>
               </div>
-              <div className="absolute -left-3 top-6 h-2 w-2 rounded-full bg-blue-500" />
-              <div className="absolute right-6 top-10 h-2 w-2 rounded-full bg-blue-500" />
-              <div className="absolute left-10 bottom-8 h-2 w-2 rounded-full bg-blue-500" />
+              <div className="absolute -left-2 top-8 h-2 w-2 rounded-full bg-blue-500 shadow-vintage-flat" />
+              <div className="absolute right-8 top-10 h-2 w-2 rounded-full bg-blue-500 shadow-vintage-flat" />
+              <div className="absolute left-12 bottom-8 h-2 w-2 rounded-full bg-blue-500 shadow-vintage-flat" />
+              <div className="absolute right-12 bottom-12 h-2 w-2 rounded-full bg-blue-500 shadow-vintage-flat" />
             </div>
           </div>
         </div>

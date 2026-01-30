@@ -38,8 +38,8 @@ export default function GestureLegend() {
         </div>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {gestures.map((gesture) => (
-            <VintageContainer key={gesture.name} variant="interactive" padding="sm" className="flex items-center gap-4">
-              <div className="flex h-16 w-16 items-center justify-center rounded-vintage bg-slate-100 text-slate-600">
+            <VintageContainer key={gesture.name} variant="interactive" padding="sm" className="flex items-center gap-4 fade-up">
+              <div className="flex h-16 w-16 items-center justify-center rounded-vintage bg-slate-100 text-slate-600 shadow-vintage-flat">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 13.5V11a2 2 0 0 1 4 0v2.5" />
                   <path d="M8 11V7a2 2 0 0 1 4 0v4" />

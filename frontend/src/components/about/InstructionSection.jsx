@@ -35,8 +35,8 @@ export default function InstructionSection() {
         <div className="absolute left-6 top-0 h-full w-px border-l-2 border-dashed border-slate-200" />
         <div className="flex flex-col gap-4">
           {steps.map((step, index) => (
-            <VintageContainer key={step.title} className="relative pl-16" padding="lg">
-              <div className="absolute left-2 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 text-white">
+            <VintageContainer key={step.title} className="relative pl-16 fade-up" padding="lg">
+              <div className="absolute left-2 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 text-white shadow-vintage-flat">
                 {index + 1}
               </div>
               <h3 className="text-lg font-semibold text-slate-800">{step.title}</h3>

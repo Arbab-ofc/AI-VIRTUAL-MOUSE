@@ -20,7 +20,7 @@ export default function CameraFeedPanel({ isConnected, handDetected }) {
         </div>
         <StatusIndicator label={statusLabel} status={statusType} />
       </div>
-      <div className={`relative aspect-video bg-slate-900 ${handDetected ? "ring-2 ring-green-400/40" : ""}`}>
+      <div className={`relative aspect-video bg-slate-900 vintage-inset ${handDetected ? "ring-2 ring-green-400/40" : ""}`}>
         <img
           src={`${API_BASE_URL}/api/video_feed`}
           alt="Camera feed"

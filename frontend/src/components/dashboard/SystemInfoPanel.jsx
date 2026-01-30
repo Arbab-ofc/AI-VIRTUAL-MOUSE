@@ -18,7 +18,7 @@ export default function SystemInfoPanel({ fps, isConnected, systemState, resolut
   const connectionColor = isConnected ? "text-green-600" : "text-red-500";
 
   return (
-    <VintageContainer variant="flat" padding="lg">
+    <VintageContainer variant="flat" padding="lg" className="fade-up">
       <div className="grid gap-6 md:grid-cols-4">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100">

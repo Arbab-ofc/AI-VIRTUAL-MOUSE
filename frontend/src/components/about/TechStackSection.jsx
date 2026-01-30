@@ -7,7 +7,7 @@ const backendStack = ["FastAPI", "OpenCV", "MediaPipe", "PyAutoGUI"];
 export default function TechStackSection() {
   return (
     <section className="mx-auto max-w-[1200px] py-12">
-      <VintageContainer padding="lg" className="grid gap-6 md:grid-cols-2">
+      <VintageContainer padding="lg" className="grid gap-6 md:grid-cols-2 fade-up">
         <div>
           <h3 className="text-xl font-semibold text-slate-800">Frontend Technologies</h3>
           <ul className="mt-4 space-y-2 text-slate-600">

@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-vintage bg-blue-50 text-blue-600 shadow-vintage-flat">
+              <div className="flex h-10 w-10 items-center justify-center rounded-vintage bg-blue-50 text-blue-600 shadow-vintage-raised">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 13.5V11a2 2 0 0 1 4 0v2.5" />
                   <path d="M8 11V7a2 2 0 0 1 4 0v4" />

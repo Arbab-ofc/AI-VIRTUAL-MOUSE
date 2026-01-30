@@ -53,7 +53,7 @@ export default function FeaturesSection() {
       </div>
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
-          <VintageContainer key={feature.title} variant="interactive" padding="lg">
+          <VintageContainer key={feature.title} variant="interactive" padding="lg" className="fade-up">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
               {feature.icon}
             </div>

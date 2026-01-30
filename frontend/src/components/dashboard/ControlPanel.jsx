@@ -17,7 +17,7 @@ export default function ControlPanel({
   const isPaused = systemState === "paused";
 
   return (
-    <VintageContainer padding="lg">
+    <VintageContainer padding="lg" className="fade-up">
       <div className="flex items-center gap-2 text-sm font-semibold text-slate-800">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 2v20" />

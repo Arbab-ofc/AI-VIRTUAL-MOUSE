@@ -14,7 +14,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between border-b border-slate-200 bg-white/80 px-6 backdrop-blur-md shadow-vintage-flat rounded-b-[20px]">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-vintage bg-blue-50 text-blue-600 shadow-vintage-flat">
+          <div className="flex h-10 w-10 items-center justify-center rounded-vintage bg-blue-50 text-blue-600 shadow-vintage-raised">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 13.5V11a2 2 0 0 1 4 0v2.5" />
               <path d="M8 11V7a2 2 0 0 1 4 0v4" />
@@ -68,7 +68,7 @@ export default function Header() {
 
       {isOpen && (
         <div className="md:hidden">
-          <div className="mx-auto max-w-[1400px] border-b border-slate-200 bg-white/95 px-6 py-4 shadow-vintage-flat backdrop-blur">
+          <div className="mx-auto max-w-[1400px] border-b border-slate-200 bg-white/95 px-6 py-4 shadow-vintage-flat backdrop-blur fade-up">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <NavLink
