@@ -42,7 +42,7 @@ export default function Header() {
             </NavLink>
           ))}
           <a
-            href="https://github.com"
+            href="https://github.com/Arbab-ofc/AI-VIRTUAL-MOUSE"
             target="_blank"
             rel="noreferrer"
             className="rounded-full px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:text-slate-900"
@@ -85,7 +85,7 @@ export default function Header() {
                 </NavLink>
               ))}
               <a
-                href="https://github.com"
+                href="https://github.com/Arbab-ofc/AI-VIRTUAL-MOUSE"
                 target="_blank"
                 rel="noreferrer"
                 className="text-base font-medium rounded-full px-4 py-2 text-slate-700"
