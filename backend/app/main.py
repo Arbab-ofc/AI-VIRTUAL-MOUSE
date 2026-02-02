@@ -206,6 +206,12 @@ def create_app() -> FastAPI:
         allow_headers=["*"]
     )
 
+    @app.get("/")
+    async def root() -> dict:
+        """Health check endpoint for hosting platforms."""
+
+        return {"status": "ok"}
+
     app.include_router(control.router)
     app.include_router(websocket.router)
     return app
