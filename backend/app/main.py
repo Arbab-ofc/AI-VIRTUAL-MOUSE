@@ -198,9 +198,10 @@ def create_app() -> FastAPI:
         app.state.app_state.stop()
 
     app = FastAPI(title="AI-Based Virtual Mouse", lifespan=lifespan)
+    allow_origins = ["*"] if FRONTEND_ORIGIN == "*" else [FRONTEND_ORIGIN]
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=[FRONTEND_ORIGIN],
+        allow_origins=allow_origins,
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"]
