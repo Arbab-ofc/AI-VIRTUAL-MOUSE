@@ -11,7 +11,10 @@ CLICK_COOLDOWN_MS = int(os.getenv("CLICK_COOLDOWN_MS", "300"))
 DETECTION_CONFIDENCE = float(os.getenv("DETECTION_CONFIDENCE", "0.7"))
 TRACKING_CONFIDENCE = float(os.getenv("TRACKING_CONFIDENCE", "0.5"))
 
-FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "*")
+FRONTEND_ORIGINS = os.getenv(
+    "FRONTEND_ORIGINS",
+    "http://localhost:5173,http://127.0.0.1:5173,https://ai-virtual-mouse.vercel.app",
+)
 
 HAND_LANDMARKER_MODEL_PATH = os.getenv(
     "HAND_LANDMARKER_MODEL_PATH",

@@ -11,7 +11,7 @@ import cv2
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.config import FRONTEND_ORIGIN, TARGET_FPS
+from app.config import FRONTEND_ORIGINS, TARGET_FPS
 from app.routers import control, websocket
 from app.services.camera_service import CameraService
 from app.services.gesture_classifier import GestureClassifier
@@ -198,7 +198,8 @@ def create_app() -> FastAPI:
         app.state.app_state.stop()
 
     app = FastAPI(title="AI-Based Virtual Mouse", lifespan=lifespan)
-    allow_origins = ["*"] if FRONTEND_ORIGIN == "*" else [FRONTEND_ORIGIN]
+    raw_origins = [origin.strip() for origin in FRONTEND_ORIGINS.split(",") if origin.strip()]
+    allow_origins = ["*"] if "*" in raw_origins else raw_origins
     app.add_middleware(
         CORSMiddleware,
         allow_origins=allow_origins,
