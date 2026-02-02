@@ -4,6 +4,7 @@ import CameraFeedPanel from "../components/dashboard/CameraFeedPanel";
 import GestureStatusPanel from "../components/dashboard/GestureStatusPanel";
 import ControlPanel from "../components/dashboard/ControlPanel";
 import SystemInfoPanel from "../components/dashboard/SystemInfoPanel";
+import FingerPositionGuidePanel from "../components/dashboard/FingerPositionGuidePanel";
 import useVirtualMouse from "../hooks/useVirtualMouse";
 
 export default function DashboardPage() {
@@ -78,6 +79,9 @@ export default function DashboardPage() {
               systemState={systemState}
               resolution={resolution}
             />
+          </div>
+          <div className="col-span-4 md:col-span-8 lg:col-span-12">
+            <FingerPositionGuidePanel />
           </div>
         </div>
       </section>
