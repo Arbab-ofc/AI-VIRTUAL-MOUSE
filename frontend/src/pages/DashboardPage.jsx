@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageWrapper from "../components/layout/PageWrapper";
 import CameraFeedPanel from "../components/dashboard/CameraFeedPanel";
 import GestureStatusPanel from "../components/dashboard/GestureStatusPanel";
@@ -28,6 +28,12 @@ export default function DashboardPage() {
     setSensitivity,
     reconnect
   } = useVirtualMouse();
+
+  useEffect(() => {
+    return () => {
+      stopMouse();
+    };
+  }, [stopMouse]);
 
   return (
     <PageWrapper>
