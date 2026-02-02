@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 mt-3">
       <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between retro-window px-6">
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3" aria-label="Virtual Mouse home">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#8CC2FF] text-[#2D2B2A] retro-shadow">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 13.5V11a2 2 0 0 1 4 0v2.5" />
@@ -23,7 +23,7 @@ export default function Header() {
             </svg>
           </div>
           <span className="text-lg font-semibold text-slate-900 font-display">Virtual Mouse</span>
-        </div>
+        </Link>
 
         <nav className="hidden items-center gap-4 md:flex">
           {navLinks.map((link) => (
