@@ -19,3 +19,6 @@ venv/
 
 # Env
 .env
+
+# Local workflow notes
+workflow.md
